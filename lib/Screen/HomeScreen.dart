@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_app/Model/RecipeClass.dart';
-
 import 'procedurePage.dart';
 
 class MyRecipeApp extends StatefulWidget {
@@ -9,9 +8,13 @@ class MyRecipeApp extends StatefulWidget {
 }
 
 class _MyRecipeAppState extends State<MyRecipeApp> {
+
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Colors.red,
         title: Text(
@@ -21,18 +24,19 @@ class _MyRecipeAppState extends State<MyRecipeApp> {
         ),
       ),
       body: SingleChildScrollView(
+
         child: Column(
           children: <Widget>[
             Image.network(
               "https://cutewallpaper.org/21/wallpapers-foods/My-Recipes-HD-Wallpapers-New-Tab-Theme.jpg",
-              height: 200,
-              width: 600,
+              height: screenHeight*0.3,
+              width: screenWidth*0.9,
               fit: BoxFit.fill,
             ),
             SizedBox(
-              height: 8,
+              height:20 ,
             ),
-            Padding(
+           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: Row(
                 children: <Widget>[
@@ -141,7 +145,7 @@ class _MyRecipeAppState extends State<MyRecipeApp> {
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      "Explorer",
+                      "Exploer",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
@@ -153,6 +157,7 @@ class _MyRecipeAppState extends State<MyRecipeApp> {
                 ],
               ),
             ),
+            SizedBox(height: 5,),
             GridView.builder(
                 physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
@@ -171,7 +176,7 @@ class _MyRecipeAppState extends State<MyRecipeApp> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.all(3.0),
+                          padding: const EdgeInsets.all(0.1),
                           child: Container(
                             width: 150,
                             height: 150,

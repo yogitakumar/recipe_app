@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:recipe_app/Model/RecipeClass.dart';
 
 class Procedure extends StatefulWidget {
-  final Recipe obj;
 
+  final Recipe obj;
   const Procedure(this.obj);
+
   @override
   _ProcedureState createState() => _ProcedureState();
 }

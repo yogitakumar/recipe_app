@@ -17,10 +17,10 @@ List<Recipe> recipeList = [
           "https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2013/05/palak-paneer-easy.jpg",
       ingredients: "Palak, Paneer, Cream, Onion",
       recipe:
-          '''1. Palak paneer is prepared by first boiling and pureeing spinach.
-2. The puree is then mixed with sauted tomatoes and onions.
-3. Grilled cubes of paneer are then added to the puree. 
-4. Palak paneer is typically spiced with ginger, garlic, tomatoes, garam masala, turmeric, chili powder and cumin.'''),
+          '''Palak paneer is prepared by first boiling and pureeing spinach.
+The puree is then mixed with sauted tomatoes and onions.
+Grilled cubes of paneer are then added to the puree. 
+Palak paneer is typically spiced with ginger, garlic, tomatoes, garam masala, turmeric, chili powder and cumin.'''),
   Recipe(
     name: "Jeera Rice",
     image:
